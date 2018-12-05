@@ -16,22 +16,6 @@ layout: layouts/base.njk
   </a>
 </p>
 
-
-<form name="contact" action="/thanks" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Happy message <input type="text" name="message" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-
-
-
-
 <h2>Deploy and then what?</h2>
 <p>
   Try out a few more of the things that you can do with this once you've deployed to Netlify.
@@ -45,8 +29,8 @@ layout: layouts/base.njk
   <li><a href="/next-steps/#functions">Deploy a serverless function</a></li>
 </ol>
 
-<hr>
 {% if form.submissions %}
+<hr>
 {% for item in form.submissions %}
   <p><b>{{ item.data.name }} </b> says: {{ item.data.message }}</p>
 {% endfor %}
