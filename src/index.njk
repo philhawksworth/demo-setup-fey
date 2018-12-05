@@ -16,6 +16,23 @@ layout: layouts/base.njk
     <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
   </a>
 </p>
+
+
+<form name="contact" action="/thanks" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Happy message <input type="tect" name="message" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+
+
 <h2>Deploy and then what?</h2>
 <p>
   Try out a few more of the things that you can do with this once you've deployed to Netlify.
