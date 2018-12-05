@@ -14,7 +14,7 @@ module.exports = {
   name: "Phil",
 
   // The event we are at
-  event: "Front End York",
+  event: "Front End York!",
 
   // The repository to which this site is linked
   repo : process.env.REPOSITORY_URL
