@@ -1,8 +1,7 @@
 ---
-title: I deployed a thing on Metlify!
+title: I deployed a thing on Netlify!
 layout: layouts/base.njk
 ---
-
 
 <h2 id="get-yours">Get your own</h2>
 <p>
@@ -23,7 +22,7 @@ layout: layouts/base.njk
     <label>Name <input type="text" name="name" /></label>
   </p>
   <p>
-    <label>Happy message <input type="tect" name="message" /></label>
+    <label>Happy message <input type="text" name="message" /></label>
   </p>
   <p>
     <button type="submit">Send</button>
@@ -46,4 +45,10 @@ layout: layouts/base.njk
   <li><a href="/next-steps/#functions">Deploy a serverless function</a></li>
 </ol>
 
+<hr>
+{% if form.submissions %}
+{% for item in form.submissions %}
+  <p><b>{{ item.data.name }} </b> says: {{ item.data.message }}</p>
+{% endfor %}
+{% endif %}
 
