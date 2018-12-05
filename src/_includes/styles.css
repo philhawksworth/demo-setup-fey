@@ -43,6 +43,15 @@ header {
   padding-bottom: 13vh;
 }
 
+header.red {
+  background-color: #8d0230;
+  background-image: none;
+}
+header.blue {
+  background-color: #1055d6;
+  background-image: none;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
