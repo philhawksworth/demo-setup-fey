@@ -2,7 +2,7 @@
   "name": "first-netlify-deploy",
   "version": "1.0.0",
   "scripts": {
-    "start": "eleventy --serve & yarn run",
+    "start": "eleventy --serve",
     "build": "eleventy & yarn run",
     "start:lambda": "netlify-lambda serve src/lambda",
     "build:lambda": "netlify-lambda build src/lambda"
