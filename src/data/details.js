@@ -14,7 +14,7 @@ module.exports = {
   name: null,
 
   // The event we are at
-  event: "Smashing Conference",
+  event: "a meetup",
 
   // The repository to which this site is linked
   repo : process.env.REPOSITORY_URL
