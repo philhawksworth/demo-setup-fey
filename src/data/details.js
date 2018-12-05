@@ -11,7 +11,7 @@ module.exports = {
   twitter: null,
 
   // Your name
-  name: "Phil Hawksworth",
+  name: null,
 
   // The event we are at
   event: "a meetup",
